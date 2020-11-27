@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Acerca">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Creadores "
+                android:textColor="#3F51B5"
+                android:textSize="24sp"
+                app:fontFamily="@font/faster_one" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@mipmap/g" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="José Horacio Cuellar Juárez"
+                android:textColor="#F44336"
+                android:textSize="20sp"
+                app:fontFamily="@font/jockey_one" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Brayan Eduardo Flores Rodríguez"
+                android:textColor="#F44336"
+                android:textSize="20sp"
+                app:fontFamily="@font/jockey_one" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Erick Josúe Urrutia Rivera"
+                android:textColor="#F44336"
+                android:textSize="20sp"
+                app:fontFamily="@font/jockey_one" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Edgar Giovanni Gómez Cerón"
+                android:textColor="#F44336"
+                android:textSize="20sp"
+                app:fontFamily="@font/jockey_one" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="DAUTE"
+                android:textColor="#673AB7"
+                android:textSize="20sp"
+                app:fontFamily="@font/jockey_one" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Ing. Manuel Gámez López"
+                android:textAllCaps="false"
+                android:textColor="#F44336"
+                android:textSize="21sp"
+                app:fontFamily="@font/jockey_one" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+     <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.crud_mysql.Home"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home2" />
+
+
+    <!--PRODUCTOS LAYOUT-->
+    <fragment
+        android:id="@+id/Productos"
+        android:label="Lista de Productos"
+        android:name="com.example.crud_mysql.Productos"
+        tools:layout="@layout/fragment_productos"/>
+
+    <fragment
+        tools:layout="@layout/fragment_insertar_delete_producto"
+        android:id="@+id/AggProducto"
+        android:name="com.example.crud_mysql.insertar_delete_producto"
+        android:label="Registrar Producto"/>
+
+    <fragment
+        android:id="@+id/ModificarProductos"
+        android:label="Modificar Producto"
+        android:name="com.example.crud_mysql.Editar_Producto"
+        tools:layout="@layout/fragment_insertar_delete_producto"/>
+
+    <fragment
+        android:id="@+id/EliminarProducto"
+        android:label="Eliminar Producto"
+        android:name="com.example.crud_mysql.Eliminar_Producto"
+        tools:layout="@layout/fragment_eliminar__producto"/>
+
+    <!--CATEGORIA LAYOUT-->
+
+
+
+    <fragment
+        tools:layout="@layout/categorias_fragment"
+        android:id="@+id/categoria"
+        android:name="com.example.crud_mysql.ui.categorias.categorias"
+        android:label="Lista de Categorias"/>
+
+    <fragment
+        tools:layout="@layout/categorias_fragment"
+        android:id="@+id/ing_categoria"
+        android:name="com.example.crud_mysql.Insert_Delete_Categoria"
+        android:label="Registrar Categorias"/>
+
+    <fragment
+        tools:layout="@layout/categorias_fragment"
+        android:id="@+id/mo_categoria"
+        android:name="com.example.crud_mysql.Editar_Categoria"
+        android:label="Modificar Categoria"/>
+    <fragment
+        tools:layout="@layout/categorias_fragment"
+        android:id="@+id/el_categoria"
+        android:name="com.example.crud_mysql.Eliminar_Categoria"
+        android:label="Eliminar Categoria"/>
+
+    <!--USUARIO-->
+
+    <fragment
+        android:id="@+id/registro_c"
+        android:name="com.example.crud_mysql.User"
+        android:label="Modificar Usuario"
+        tools:layout="@layout/fragment_user"/>
+
+    <fragment
+        android:id="@+id/about"
+        android:name="com.example.crud_mysql.Acerca"
+        android:label="Acerca de"
+        tools:layout="@layout/fragment_acerca"/>
+
+
+
+
+</navigation>

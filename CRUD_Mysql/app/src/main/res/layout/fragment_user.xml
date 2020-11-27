@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modificar Usuario"
+                android:textColor="#3F51B5"
+                android:textSize="22sp"
+                app:fontFamily="@font/jockey_one" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@mipmap/perfil2"
+                        app:srcCompat="@mipmap/perfil2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:hint="Nombre"
+                        app:boxStrokeColor="@color/colorRojo"
+                        app:hintTextColor="@color/colorRojo"
+                        app:startIconDrawable="@mipmap/user"
+                        app:startIconTint="#0A0806"
+                        android:fontFamily="@font/chewy">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/nombre_u"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/chewy"
+                            android:textColor="#3F51B5" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:hint="Apellido"
+                        app:hintTextColor="@color/colorRojo"
+                        app:startIconDrawable="@mipmap/user"
+                        app:startIconTint="#0A0806"
+                        android:fontFamily="@font/chewy">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/apellido_u"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="#3F51B5"
+                            android:fontFamily="@font/chewy"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:hint="Usuario"
+                        app:boxStrokeColor="@color/colorRojo"
+                        app:hintTextColor="@color/colorRojo"
+                        app:startIconDrawable="@mipmap/usuario"
+                        app:startIconTint="#0A0806"
+                        android:fontFamily="@font/chewy">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/user_u"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/chewy"
+                            android:textColor="#3F51B5" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:hint="Contraseña"
+                        app:boxStrokeColor="@color/colorRojo"
+                        app:hintTextColor="@color/colorRojo"
+                        app:startIconDrawable="@mipmap/c"
+                        app:startIconTint="#0A0806"
+                        android:fontFamily="@font/chewy">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/con_u"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textPassword"
+                            android:textColor="#673AB7"
+                            android:fontFamily="@font/chewy"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/chewy"
+                        android:hint="Correo"
+                        app:boxStrokeColor="@color/colorRojo"
+                        app:hintTextColor="@color/colorRojo"
+                        app:startIconDrawable="@mipmap/baseline_email_black_48"
+                        app:startIconTint="#0A0806">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/correo_u"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/chewy"
+                            android:textColor="#3F51B5" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="ModifyUser"
+                android:text="Guardar"
+                app:backgroundTint="@color/colorRojo"
+                android:fontFamily="@font/faster_one"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

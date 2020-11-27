@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Seleccione el producto"
+            android:textColor="#3F51B5"
+            android:textSize="22sp"
+            app:fontFamily="@font/jockey_one" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/Detalles_Producto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:saveEnabled="false"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/DatosProductos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Detalles  del Producto"
+                android:textColor="#F44336"
+                android:textSize="22sp"
+                app:fontFamily="@font/chewy" />
+
+            <TextView
+                android:id="@+id/nom_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Nombre"
+                android:textColor="#FF5722"
+                android:textSize="22sp"
+                android:visibility="visible"
+                app:fontFamily="@font/chewy" />
+
+            <TextView
+                android:id="@+id/precio_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Precio"
+                android:textColor="#FF5722"
+                android:textSize="22sp"
+                app:fontFamily="@font/chewy" />
+
+            <TextView
+                android:id="@+id/cat_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Categoria"
+                android:textColor="#FF5722"
+                android:textSize="22sp"
+                app:fontFamily="@font/chewy" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:text="Esta seguro de Eliminar el Item?"
+                android:textColor="#F44336"
+                android:textSize="23sp"
+                app:fontFamily="@font/chewy" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="No Eliminar" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:onClick="EliminarP"
+                    android:text="Eliminar"
+                    app:backgroundTint="@color/colorRojo" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

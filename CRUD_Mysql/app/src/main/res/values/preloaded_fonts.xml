@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/boogaloo</item>
+        <item>@font/chewy</item>
+        <item>@font/faster_one</item>
+        <item>@font/jockey_one</item>
+        <item>@font/knewave</item>
+        <item>@font/montserrat_subrayada</item>
+        <item>@font/spinnaker</item>
+    </array>
+</resources>
